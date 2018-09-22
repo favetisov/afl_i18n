@@ -1,0 +1,14 @@
+<div class="background"
+     [style.background]="bgUrl"
+     [style.height]="size"
+     [style.width]="size"
+>
+
+    <div class="photo"
+         [style.background]="photoUrl"
+         *ngIf="photoUrl"
+         [style.height]="size"
+         [style.width]="size"
+    ></div>
+
+</div>

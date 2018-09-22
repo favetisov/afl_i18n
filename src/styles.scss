@@ -1,0 +1,120 @@
+// http://ionicframework.com/docs/theming/
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+//@import "~@ionic/angular/css/colors.css";
+
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+}
+
+html, body, #wrapper, app-root, div[_ngcontent-c0] {
+  height: 100%;
+  color: var(--ion-color-primary-font);
+}
+
+a, ion-input, .text {
+  font-size: 13px;
+  color: var(--ion-color-primary-font);
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ion-color-primary-font);
+}
+
+body {
+  background: var(--ion-color-primary-background);
+}
+
+a {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ ion-input {
+  &.invalid {
+    color: red;
+  }
+}
+
+ion-toast {
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  &.error-toast .toast-message {
+    background: var(--ion-color-danger);
+  }
+  &message-toast .toast-message {
+    background: var(--ion-color-success);
+  }
+}
+
+ion-modal {
+  ion-content {
+    height: 100%;
+  }
+
+}
+
+
+.grecaptcha-badge {
+  transform:  scale(.75) translateX(-18px) translateY(18px);
+  transition: all .3s ease-in-out !important;
+  &:hover {
+    transform:  scale(1);
+  }
+}
+
+
+ion-content {
+  min-height: 100%;
+}
+
+.searchbar-wrapper {
+  position: relative;
+  margin-left: -2px;
+  margin-right: -2px;
+  ion-searchbar {
+    margin: 0;
+    text-align: left;
+  }
+  .searchbar-input {
+    background: white;
+    font-size: 12px;
+  }
+  ion-spinner {
+    position: absolute;
+    opacity: .75;
+    right: 18px;
+    top: 15px;
+    color: var(--ion-color-primary-font);
+  }
+}
+
+
+.card {
+  background: white;
+  padding: 2px 0;
+  max-width: 500px;
+  margin-top: 0;
+  margin-left: 6px;
+  margin-right: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+ion-content {
+  text-align: center;
+}
+.page-content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}

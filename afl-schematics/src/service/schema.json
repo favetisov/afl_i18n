@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsAflService",
+  "title": "Service Options Schema",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "format": "path",
+      "description": "The path to create the page",
+      "visible": false
+    },
+    "project": {
+      "type": "string",
+      "description": "The name of the project",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the page",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "prefix": {
+      "type": "string",
+      "description": "The prefix to apply to generated selectors",
+      "alias": "p",
+      "oneOf": [
+        {
+          "maxLength": 0
+        },
+        {
+          "minLength": 1,
+          "format": "html-selector"
+        }
+      ]
+    }
+  },
+  "required": []
+}

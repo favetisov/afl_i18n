@@ -1,0 +1,19 @@
+<div class="header">
+
+    <button (click)="close()">
+        <!--<ion-icon name="arrow-back"></ion-icon>-->
+    </button>
+
+    <div style="flex: 1"></div>
+
+    <button (click)="save()">
+        OK
+    </button>
+</div>
+
+<div class="cropper"
+    [style.height]="platform.height()"
+    [style.width]="platform.width()"
+>
+    <img-cropper #cropper  [image]="data" [settings]="cropperSettings"></img-cropper>
+</div>

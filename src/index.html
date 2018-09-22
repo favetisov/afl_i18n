@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AFL i18n</title>
+    <base href="/">
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="google" value="notranslate">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" sizes="192x192" href="assets/icons/favicon.png">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+    <div class="splash" id="splash">
+        <img src="assets/icons/favicon.png">
+    </div>
+    <style>
+        #splash {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: white;
+        }
+        @keyframes blink {
+            0% { opacity: .85 }
+            50% { opacity: 1 }
+            100% { opacity: .85 }
+        }
+        #splash img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -96px;
+            margin-top: -116px;
+            animation: blink 5s infinite;
+        }
+    </style>
+
+    <div id="wrapper">
+        <app-root></app-root>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase-messaging.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBqM61ucKRr1IAbl0BdNVsSxLoXMfeFrxs",
+            authDomain: "afl3-93879.firebaseapp.com",
+            databaseURL: "https://afl3-93879.firebaseio.com",
+            projectId: "afl3-93879",
+            storageBucket: "",
+            messagingSenderId: "269526583554"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+//        navigator.serviceWorker.register('./firebase-messaging-sw.js', {scope: "firebase-cloud-messaging-push-scope"}).then(function(registration)  {
+//            firebase.messaging().useServiceWorker(registration);
+//            firebase.messaging().usePublicVapidKey('BOuxXdsNVOrga9ECSzYTeFMj32rGP7q63t6GQXvfkWE9FEPTkqMknF7lDSFqGfA7DP7Qv4zizwUBy1kzHwyadKE');
+//        });
+
+    </script>
+
+</body>

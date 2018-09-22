@@ -1,0 +1,17 @@
+{
+  "APP_KEY": "AFL_I18N",
+  "APP_TYPE": "AFL_I18N",
+  "APP_NAME": "AFL i18n",
+  "STYLE": "AFL",
+  "THEME_COLOR": "#002544",
+  "COUNTRY": "RUSSIAN FEDERATION",
+  "SPONSORS": {
+  },
+  "HOSTS": {
+    "API": "https://afl.ru/m2-api",
+    "PHOTO": "https://afl.ru/api/app",
+    "INFOGRAPHICS": "https://afl.ru/igraphics",
+    "BASE": "3/afl",
+    "LOCAL": "https://afl.ru/3/afl"
+  }
+}

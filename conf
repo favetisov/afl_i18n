@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+node ./deploy/conf.js $1 $2

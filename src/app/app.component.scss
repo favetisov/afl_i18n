@@ -1,0 +1,14 @@
+ion-menu {
+  div {
+    background: var(--ion-color-primary);
+  }
+  ion-footer {
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    background: var(--ion-color-primary);
+    img {
+      height: 35px;
+    }
+  }
+}

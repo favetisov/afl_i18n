@@ -1,0 +1,38 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+
+  "schematics": {
+    "model": {
+      "aliases": ["m"],
+      "description": "Model",
+      "schema": "./model/schema.json",
+      "factory": "./model"
+    },
+    "component": {
+      "aliases": ["c"],
+      "description": "Component",
+      "schema": "./component/schema.json",
+      "factory": "./component"
+    },
+    "service": {
+      "aliases": ["s"],
+      "description": "Service",
+      "schema": "./service/schema.json",
+      "factory": "./service"
+    },
+    "page": {
+      "aliases": ["p"],
+      "description": "Page",
+      "schema": "./page/schema.json",
+      "factory": "./page"
+    },
+    "modal": {
+      "description": "Modal",
+      "schema": "./modal/schema.json",
+      "factory": "./modal"
+    },
+    "module": {
+      "extends": "@schematics/angular:module"
+    }
+  }
+}
